@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -11,4 +13,185 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+h2 {
+    display: flex;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    padding-top: 16px;
+    padding-left: 16px;    
+}
+.item {
+    border-radius: 8px;
+    border: none;
+    width: 392px;
+    height: 264px;
+    background: #f6f6fe;
+    margin: 24px;
+}
+li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;  
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    margin: 16px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  }
+li.gallery {
+  width: calc((100% - 48px) / 3);
+}
+
+#name-input {
+  background-color: transparent;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  gap: 16px;
+}
+#name-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    padding-left: 16px;
+}
+h1,
+#name-output {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+div.widget {
+  border-radius: 8px;
+    padding: 88px 100px;
+    width: 345px;
+    height: 280px;
+    background: #fff;
+}
+p.color {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  gap: 16px;
+}
+button.change-color {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  background: #4e75ff;
+}
+
+.login-form {
+  display: flex;
+  border-radius: 8px;
+    width: 408px;
+    height: 256px;
+    padding: 24px;
+    background: #fff;
+    flex-direction: column;
+    gap: 8px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    gap: 8px;
+    color: #2e2f42;
+}
+input .login-form {
+  border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    gap: 8px;
+}
+button .login-form {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    align-self: start;
+    border-radius: 8px;
+    padding-top: 16px;
+    width: 86px;
+    height: 40px;
+    background: #4e75ff;
+}
+#controls {
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  background: #f6f6fe;
+  margin-bottom: 16px;
+}
+#boxes{
+  border-radius: 8px;
+    padding: 32px;
+    width: 486px;
+    height: 134px;
+    background: #f6f6fe;
+    display: flex;
+}
+input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  width: 150px;
+  height: 40px;
+}
+button {
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #4e75ff;
 }
