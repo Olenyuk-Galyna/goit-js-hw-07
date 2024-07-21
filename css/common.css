@@ -33,6 +33,12 @@ h2 {
     padding-left: 16px;    
 }
 .item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    padding: 16px;
     border-radius: 8px;
     border: none;
     width: 392px;
@@ -40,19 +46,7 @@ h2 {
     background: #f6f6fe;
     margin: 24px;
 }
-li {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.04em;
-    color: #2e2f42;  
-    border: 1px solid #808080;
-    border-radius: 4px;
-    width: 360px;
-    height: 40px;
-    margin: 16px;
-}
-
+ 
 .gallery {
   display: flex;
   flex-wrap: wrap;
